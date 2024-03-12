@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        padding: 0 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+      }
+      nav ul li {
+        font-size: 22px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+      }
+      nav ul button {
+        padding: 15px 25px;
+        border-radius: 10px;
+        background-color: #029ef3;
+        color: #fff;
+        font-size: large;
+        border: none;
+        font-weight: 700;
+        text-align: center;
+        transition: 0.4s;
+      }
+      nav ul button:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0px 1px 8px 2px #029ef3;
+      }
+      nav ul li a:hover{
+        color: #029ef3;
+     }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo">
+            <a><img height="64" width="64" src="logo.png" alt="logo" /></a>
+          </li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Subject</a></li>
+          <li><a href="#">Path</a></li>
+        </ul>
+        <div id="right">
+          <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><button>Join Pro</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
